@@ -11,9 +11,7 @@ The School Board has noticed possible evidence of academic dishonesty anong the 
 ![9th grader scores RnM NaN](https://user-images.githubusercontent.com/84881187/124371771-01787580-dc53-11eb-9356-f1a44a7e0ae5.PNG)
 
 
-How is the district summary affected?
-How is the school summary affected?
-How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+
 
 By replacing the ninth graders' math and reading scores with NaN, it resulted in the following changes in Thomas High School's performance relative to other schools:
   1. The overall passing percentage for Thomas High School fell to 65%
@@ -46,6 +44,8 @@ _[Original Spending Scores]_
 _[Updated Spending Scores]_
 ![School Spinding Scores](https://user-images.githubusercontent.com/84881187/124372903-00981180-dc5c-11eb-8563-cf0ad5ae48d8.PNG)
 
+### School Funding, Size, and Type
+
 In part to the fact that the changes in scores results in less than 1% shifts, School Size and School Type were not affected by the changes made to our analysis. Our analysis also founded that Average Scores and Passing Percentage do not increase as spending per student increases. The top scoring schools in the district received less per strudent than the lowest performing school. This could imply that there are other variables at play than funding that decide the average student scores. 
 ![spending ranges per student](https://user-images.githubusercontent.com/84881187/124373359-c0d32900-dc5f-11eb-81c8-a4774b834ef8.PNG)
 
@@ -57,15 +57,18 @@ When it comes to the data between Types of schools, we see that Charter schools 
 
 ![School Type](https://user-images.githubusercontent.com/84881187/124373386-f11ac780-dc5f-11eb-8fa5-5629aa2f31d6.PNG)
 
-After Analyzing the average scores for math and reading for each grade across each school, we found that students grade levels do not affect their scores as much as other variables regarding the school that they attend. Please see below for a DataFrame except of scores be grade:
+After Analyzing the average scores for math and reading for each grade across each school, we found that students grade levels do not affect their scores as much as other variables regarding the school that they attend. Please see below for a DataFrame except of scores be grades in both Math and Reading:
+![math grades across schools](https://user-images.githubusercontent.com/84881187/124390853-767f9580-dcbb-11eb-8f29-18ce98d9a4e8.PNG)
+![reading grades across schools](https://user-images.githubusercontent.com/84881187/124390857-78e1ef80-dcbb-11eb-881a-1e6c4d67f574.PNG)
 
-![Scores by Grade](https://user-images.githubusercontent.com/84881187/124373617-c7fb3680-dc61-11eb-93e1-4820f85b17c5.PNG)
+
 
 
 
 ## Analysis Summary
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
 
 The School Board notified us of the potential academic dishonesty. Unfortunately, our data does not allows us to determine which individual students were responsible for the discrepancies with the Thomas High School overall scores. This resulted in the decision to omit the all the 9th Grade Scores from Thomas High School from the complete data set. While leaving the known false data in would create an inaccurate data set, omitting the data also limits us from having the most accuate results of the school district's performance. 
 
-By replacing the 9th graders' scores to NaN, Thomas High School's overall passing percentage, and average reading scores declined. The reading and math scores for the whole district also saw a decrease in their averages. Because of this, Thomas High School fell from the Top 5 schools within the disctrict. 
+By replacing the 9th graders' scores to NaN, Thomas High School's overall passing percentage, and average reading scores declined. The reading and math scores for the whole district also saw a decrease in their averages.  Even with the 9th grade data omitted, we were still able to draw some useful conclusions to help guide the School Board's decisions for th next year. We saw that even with the omitted data dropping Thomas High School's averages, they remained in the Top 5 Schools in the district. Our analysis of the grade averages for Reading and Math across each school showed that there were minimal differences in grade scores between each grade, but there more significan differences in grade scores between schools. We did observe a slight drop in overall performance for schools withing the  $630-$644 (per student) range with the omitted data. However, by analyzing the School Funding Per Student data, we were able to see that higher funding per student did not results in better grade scores. In fact, the Bottom 5 schools had higher average funding per student than the Top 5 schools in the district. A more notable factor that appears to affect grade scores is school size. The scores did not change despite the omitted data between school sizes, but we can see that 'Large' schools have lower average scores than both 'Small' and 'Medium' sized schools. 
+
+Our data provides a visual representation of school perfomance across the entire school district. We were able to omitt some erroneous data, and provide as accurate a depeiction of the score averages as possible. The school board will be able to use our data to make necessary changes to improve education quality and scoring within this school district. 
