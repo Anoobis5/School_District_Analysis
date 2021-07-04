@@ -14,11 +14,10 @@ The School Board has noticed possible evidence of academic dishonesty anong the 
 
 
 By replacing the ninth graders' math and reading scores with NaN, it resulted in the following changes in Thomas High School's performance relative to other schools:
-  1. The overall passing percentage for Thomas High School fell to 65%
-  2. The overall passing percentage for the entire district fell to 64.9%
+  1. The overall passing percentage for the entire district fell to 64.9%
 ![THS_Performance_post_edit](https://user-images.githubusercontent.com/84881187/124371846-c9bdfd80-dc53-11eb-9393-be8f64951974.PNG)
 ![THS Overall](https://user-images.githubusercontent.com/84881187/124372595-6040ed80-dc59-11eb-87af-5d363b0a6dc6.PNG)
-
+  2. The overall passing percentage for Thomas High School fell to 65%
  3. The Top Five Schools list still included Thomas High School, despite the omitted scores.
 ![top 5 schools](https://user-images.githubusercontent.com/84881187/124372024-7e0c5380-dc55-11eb-8d92-280c91c124ed.PNG)
 ![bottom 5 schools](https://user-images.githubusercontent.com/84881187/124372025-7f3d8080-dc55-11eb-83cf-5d42dbac95b7.PNG)
