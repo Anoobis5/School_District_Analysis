@@ -1,1 +1,71 @@
 # School_District_Analysis
+
+## Project Overview: the School District Analysis
+The purpose of this project is to analyze the data of an entire School District. We were tasked with analyzing and organizing the data to display factors such as: school funding breakdown, the average student scores across math and reading, and their passing rate in order to gain insights that will illustrate each school's perfomance for analysis. We were also tasked to uphold state-testing standards, and reconduct the analysis due to potential academic dishonesty among a group of students.
+
+## Analysis Results
+
+The School Board has noticed possible evidence of academic dishonesty anong the ninth grade students of Thomas High School. In our original analysis, we included the full set of student for every school in the district. For our second analysis, as requested by Maria and the School Board, we omitted Thomas High School calculations from out analysis. We used .loc functions to select and replace all of the 9th grade scores to NaN. See below for both a samople and grade view of the School District DataFrame with the 9th grader's scores replaced with Nan:
+
+![9th grader NaN sample](https://user-images.githubusercontent.com/84881187/124371770-ffaeb200-dc52-11eb-8f1b-b2ff854a2971.PNG)
+![9th grader scores RnM NaN](https://user-images.githubusercontent.com/84881187/124371771-01787580-dc53-11eb-9356-f1a44a7e0ae5.PNG)
+
+
+How is the district summary affected?
+How is the school summary affected?
+How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+
+By replacing the ninth graders' math and reading scores with NaN, it resulted in the following changes in Thomas High School's performance relative to other schools:
+  1. The overall passing percentage for Thomas High School fell to 65%
+  2. The overall passing percentage for the entire district fell to 64.9%
+![THS_Performance_post_edit](https://user-images.githubusercontent.com/84881187/124371846-c9bdfd80-dc53-11eb-9393-be8f64951974.PNG)
+![THS Overall](https://user-images.githubusercontent.com/84881187/124372595-6040ed80-dc59-11eb-87af-5d363b0a6dc6.PNG)
+
+ 3. The Top Five Schools list still included Thomas High School, despite the omitted scores.
+![top 5 schools](https://user-images.githubusercontent.com/84881187/124372024-7e0c5380-dc55-11eb-8d92-280c91c124ed.PNG)
+![bottom 5 schools](https://user-images.githubusercontent.com/84881187/124372025-7f3d8080-dc55-11eb-83cf-5d42dbac95b7.PNG)
+
+When we omitted the ninth graders' of Thomas High School scores, it resulted in the following changes:
+1. The overall passing percentage of Thomas High School dropped by 0.1%
+2. The average scores for math at Thomas High School decreased by 0.2%
+3. The avergae scores for reading at Thomas High School decreased be 0.3%
+4. The overall passing percentage for schools within the range of $630-$644 decreased by 0.2%
+
+
+Please see below for the Original Analysis Scores vs. the Refactored Analysis Scores for comparison:
+
+
+_[Original Analysis]_
+![Original District Scores](https://user-images.githubusercontent.com/84881187/124372850-97180300-dc5b-11eb-96f1-1f24e9c602be.PNG)
+_[Updated Analysis]_
+![updated district scores](https://user-images.githubusercontent.com/84881187/124372852-997a5d00-dc5b-11eb-949d-7be010150e28.PNG)
+
+_[Original Spending Scores]_
+![Original Spenging Scores](https://user-images.githubusercontent.com/84881187/124372929-3d640880-dc5c-11eb-8588-55a9ecad1ff6.PNG)
+
+_[Updated Spending Scores]_
+![School Spinding Scores](https://user-images.githubusercontent.com/84881187/124372903-00981180-dc5c-11eb-8563-cf0ad5ae48d8.PNG)
+
+In part to the fact that the changes in scores results in less than 1% shifts, School Size and School Type were not affected by the changes made to our analysis. Our analysis also founded that Average Scores and Passing Percentage do not increase as spending per student increases. The top scoring schools in the district received less per strudent than the lowest performing school. This could imply that there are other variables at play than funding that decide the average student scores. 
+![spending ranges per student](https://user-images.githubusercontent.com/84881187/124373359-c0d32900-dc5f-11eb-81c8-a4774b834ef8.PNG)
+
+
+However, when it comes to school size, 'Large' schools (over 2,000 students) have the lowest average scores and passing percentage. There is a minimal difference in performance (1%) between 'Small' and 'Medium' schools in the district. This may indicate that factor of success/passing rate may be that students learn and perfom better in smaller, more intimate class settings. 
+![School Size](https://user-images.githubusercontent.com/84881187/124373353-b3b63a00-dc5f-11eb-9b2e-29e739fd5236.PNG)
+
+When it comes to the data between Types of schools, we see that Charter schools perform better overall than District schools in this school district (about 35% better overall). Please see below for the DataFrame excerpt of the School Type DataFrame:
+
+![School Type](https://user-images.githubusercontent.com/84881187/124373386-f11ac780-dc5f-11eb-8fa5-5629aa2f31d6.PNG)
+
+After Analyzing the average scores for math and reading for each grade across each school, we found that students grade levels do not affect their scores as much as other variables regarding the school that they attend. Please see below for a DataFrame except of scores be grade:
+
+![Scores by Grade](https://user-images.githubusercontent.com/84881187/124373617-c7fb3680-dc61-11eb-93e1-4820f85b17c5.PNG)
+
+
+
+## Analysis Summary
+Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+
+The School Board notified us of the potential academic dishonesty. Unfortunately, our data does not allows us to determine which individual students were responsible for the discrepancies with the Thomas High School overall scores. This resulted in the decision to omit the all the 9th Grade Scores from Thomas High School from the complete data set. While leaving the known false data in would create an inaccurate data set, omitting the data also limits us from having the most accuate results of the school district's performance. 
+
+By replacing the 9th graders' scores to NaN, Thomas High School's overall passing percentage, and average reading scores declined. The reading and math scores for the whole district also saw a decrease in their averages. Because of this, Thomas High School fell from the Top 5 schools within the disctrict. 
